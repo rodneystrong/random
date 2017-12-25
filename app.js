@@ -34,3 +34,15 @@ function addAll(arr) {
   }
   return sum;
 }
+
+//maxItem. figure out the largest value
+function max(arr) {
+  var current = arr[0];
+  arr.forEach(function(item) {
+    if (item > current) {
+      current = item;
+      console.log(current);
+    }
+  });
+  return current;
+}

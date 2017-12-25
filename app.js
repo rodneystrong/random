@@ -25,3 +25,12 @@ function isUniform(arr) {
 }
 
 //sumArray(). add em all up
+//create a var that holds the current sum
+function addAll(arr) {
+  var sum = 0;
+  for (i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    //console.log(sum);
+  }
+  return sum;
+}

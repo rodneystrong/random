@@ -1,15 +1,9 @@
-//create secret #
-var secretNum = 4;
+console.log("lol");
+var todos = ["get tall", "get smart", "get happy"];
 
-//ask for a guess
-var guess = prompt("guess a number");
-console.log(guess);
-var numGuess = Number(guess);
-//check the guess
-if (numGuess === secretNum) {
-  console.log("nice guess");
-} else if (numGuess < secretNum) {
-  console.log("too low keep guessing");
-} else if (numGuess > secretNum) {
-  console.log("too high keep guessing");
+var input = prompt("what you wanna do");
+
+//if input is 'list' then list all the Todos
+if (input === "list") {
+  console.log(todos);
 }

@@ -9,3 +9,19 @@ function printReverse(arr) {
 }
 
 printReverse(numbers);
+
+//isUniform(). return true if all same
+
+var other = [1, 1, 1, 1];
+
+function isUniform(arr) {
+  var first = arr[0];
+  for (i = 1; i < arr.length; i++) {
+    if (arr[i] !== first) {
+      return false;
+    }
+  }
+  return true;
+}
+
+//sumArray(). add em all up

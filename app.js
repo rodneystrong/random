@@ -1,15 +1,11 @@
-//create secret #
-var secretNum = 4;
+//printReverse(). reverse the array
 
-//ask for a guess
-var guess = prompt("guess a number");
-console.log(guess);
-var numGuess = Number(guess);
-//check the guess
-if (numGuess === secretNum) {
-  console.log("nice guess");
-} else if (numGuess < secretNum) {
-  console.log("too low keep guessing");
-} else if (numGuess > secretNum) {
-  console.log("too high keep guessing");
+var numbers = [1, 2, 3, 4, 5];
+
+function printReverse(arr) {
+  for (i = arr.length; i >= 0; i--) {
+    console.log(arr[i]);
+  }
 }
+
+printReverse(numbers);
